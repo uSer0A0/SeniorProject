@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_paint">Paint</string>
+    <string name="title_post">Post</string>
+    <string name="title_make">Make</string>
+    <string name="title_gallary">Gallary</string>
+    <string name="pen" translatable="false">pen</string>
+    <string name="colors">color</string>
+    <string name="deletes">delete</string>
+    <string name="black">black</string>
+    <string name="white">white</string>
+    <string name="blue">blue</string>
+    <string name="red">red</string>
+    <string name="yello">yello</string>
+    <string name="orange">orange</string>
+    <string name="green">green</string>
+    <string name="small">small</string>
+    <string name="regular">regular</string>
+    <string name="big">big</string>
+    <string name="right">right</string>
+    <string name="dark">dark</string>
+    <string name="selected">selected</string>
+    <string name="reset_button_text">reset_button</string>
+    <string name="erase_button">erase</string>
+    <string name="reset">reset</string>
+    <string name="change_color_button">chnage_color</string>
+    <string name="pen_size">Pen size</string>
+    <string name="save_image_button">save_button</string>
+    <string name="read_image_button">read_button</string>
+    <string name="undo_image_button">undo_button</string>
+    <string name="redo_image_button">redo_button</string>
+</resources>

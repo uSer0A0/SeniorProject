@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#cd5c5c</color>
+    <color name="purple_700">#bc8f8f</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_orage">#FFBB33</color>
+    <color name="pink">#ffa2a7</color>
+    <color name="colorPrimary">#4682d4</color>
+    <color name="colorPrimaryDark">#778899</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="gainsboro">#dcdcdc</color>
+
+    <color name="clearButtonPressed">#33000000</color>
+</resources>

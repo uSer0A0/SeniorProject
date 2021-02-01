@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_margin="20dp"
+        android:background="#CCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <view
+        android:id="@+id/view"
+        class="com.example.bottomnavigation.ui.dashboard.PaintView"
+        id="@+id/view2"
+        android:layout_width="410dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="200dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/change_color_imgButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/oekaki"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eraser_imgButton"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <ImageButton
+        android:id="@+id/eraser_imgButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/kesigomu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <ImageButton
+        android:id="@+id/save_imgButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hozon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/reset_imgButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/undo_imgButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/redo_imgButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/raight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
