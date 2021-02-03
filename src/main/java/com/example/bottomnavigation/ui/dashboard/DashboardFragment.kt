@@ -5,6 +5,7 @@ import android.content.ContentValues
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.Environment
+import android.os.Handler
 import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
@@ -22,6 +23,8 @@ import com.example.bottomnavigation.MainActivity.Companion.set_drawEraserFlag
 import com.example.bottomnavigation.MainActivity.Companion.set_drawView
 import com.example.bottomnavigation.R
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
+import kotlinx.android.synthetic.main.fragment_dashboard.view.animationView_main
+import kotlinx.android.synthetic.main.fragment_home.view.*
 import yuku.ambilwarna.AmbilWarnaDialog
 import java.io.IOException
 
@@ -31,6 +34,7 @@ class DashboardFragment : Fragment() {
     private var root: View? = null
     private lateinit var paintView: PaintView
     private var defaultColor = 0
+    private val handler = Handler()
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -50,6 +54,12 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //おえかきスタートアニメーション
+        view.animationView_main.visibility = View.VISIBLE
+        handler.postDelayed({
+            view.animationView_main.visibility = View.INVISIBLE
+        }, 6000)
 
         //Viewを取得
         paintView = view.findViewById(R.id.view) as PaintView

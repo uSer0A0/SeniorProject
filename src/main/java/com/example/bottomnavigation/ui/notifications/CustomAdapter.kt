@@ -1,5 +1,6 @@
 package com.example.bottomnavigation.ui.notifications
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bottomnavigation.R
 
-class CustomAdapter(private val animalList: List<Animal>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+
+class CustomAdapter(private val list: List<String>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val image: ImageView = view.findViewById(R.id.image_view)
@@ -20,9 +22,9 @@ class CustomAdapter(private val animalList: List<Animal>): RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        val animal = animalList[position]
-        viewHolder.image.setImageResource(animal.image)
+        viewHolder.image.setImageURI(Uri.parse(list[position]))
     }
 
-    override fun getItemCount() = animalList.size
+
+    override fun getItemCount() = list.size
 }

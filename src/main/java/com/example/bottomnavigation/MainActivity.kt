@@ -21,6 +21,10 @@ import com.example.bottomnavigation.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
+    //座標・色情報を保持するためのクラス
+    class SeedCoordinate constructor(var cX: Double, var cY: Double)
+    class ColorCoordinate constructor(var red: Double, var green: Double, var blue: Double)
+
     companion object{
         private var drawView: View? = null
         private var paintView: View? = null
@@ -31,11 +35,10 @@ class MainActivity : AppCompatActivity() {
         private var eraserFlag: Boolean = false
         private var eraserPaintFlag: Boolean = false
         private var setFlag: Boolean = true
-
-        private val seedCoordinateList: MutableList<HomeFragment.SeedCoordinate> = ArrayList()
-        private val colorList: MutableList<HomeFragment.ColorCoordinate> = ArrayList()
-        private val undoSeedList: MutableList<HomeFragment.SeedCoordinate> = ArrayList()
-        private val undoColorList: MutableList<HomeFragment.ColorCoordinate> = ArrayList()
+        val seedCoordinateList: MutableList<SeedCoordinate> = ArrayList()
+        val colorList: MutableList<ColorCoordinate> = ArrayList()
+        val undoSeedList: MutableList<SeedCoordinate> = ArrayList()
+        val undoColorList: MutableList<ColorCoordinate> = ArrayList()
 
         fun set_drawView(saveView: View?){
             drawView = saveView
@@ -108,26 +111,6 @@ class MainActivity : AppCompatActivity() {
 
         fun get_Flag(): Boolean {
             return setFlag
-        }
-
-        fun set_seedCoordinateList(seed: MutableList<HomeFragment.SeedCoordinate>) {
-            for (i in 0..seedCoordinateList.size - 1) {
-                seedCoordinateList.add(seed[i])
-            }
-        }
-
-        fun get_seedCoordinateList(): MutableList<HomeFragment.SeedCoordinate> {
-            return seedCoordinateList
-        }
-
-        fun set_colorList(color: MutableList<HomeFragment.ColorCoordinate>) {
-            for (i in 0..colorList.size - 1) {
-                colorList.add(color[i])
-            }
-        }
-
-        fun get_colorList(): MutableList<HomeFragment.ColorCoordinate> {
-            return colorList
         }
 
     }

@@ -130,6 +130,7 @@ class PaintView : View {
     fun clear() {
         paths.clear()
         invalidate()
+        cv.drawColor(Color.WHITE)
     }
 
     //消しゴム機能
