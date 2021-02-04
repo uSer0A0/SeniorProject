@@ -1,11 +1,13 @@
 package com.example.bottomnavigation
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.BitmapRegionDecoder
 import android.os.Bundle
 import android.os.Handler
+import android.util.AttributeSet
 import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,12 +20,16 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.bottomnavigation.MainActivity.Companion.seedCoordinateList
 import com.example.bottomnavigation.ui.home.HomeFragment
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class MainActivity : AppCompatActivity() {
 
     //座標・色情報を保持するためのクラス
     class SeedCoordinate constructor(var cX: Double, var cY: Double)
     class ColorCoordinate constructor(var red: Double, var green: Double, var blue: Double)
+
+    private val handler = Handler()
 
     companion object{
         private var drawView: View? = null
